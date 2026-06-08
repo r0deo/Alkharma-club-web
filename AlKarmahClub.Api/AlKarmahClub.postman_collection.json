@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "alkarmahclub-backend-api",
+    "name": "AlKarmahClub Backend API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "API collection for AlKarmahClub backend services"
+  },
+  "item": [
+    {
+      "name": "Feature 0.5 - Testing Foundation",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["health"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "System Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/system/status",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "system", "status"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Swagger",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/swagger/index.html",
+              "host": ["{{baseUrl}}"],
+              "path": ["swagger", "index.html"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Exception Test - Not Found",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/test/throw-not-found",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "test", "throw-not-found"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Exception Test - Validation",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/test/throw-validation",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "test", "throw-validation"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Exception Test - Server Error",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/test/throw-unhandled",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "test", "throw-unhandled"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

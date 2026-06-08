@@ -14,7 +14,7 @@ public static class DependencyInjection
 
         if (string.IsNullOrWhiteSpace(connectionString))
         {
-            throw new InvalidOperationException("Connection string 'DefaultConnection' is not configured.");
+            return services;
         }
 
         services.AddDbContext<AppDbContext>(options =>
